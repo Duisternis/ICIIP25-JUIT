@@ -1,0 +1,28 @@
+.content-info {
+  margin-inline: 10%;
+  margin-block: 5rem;
+  padding-inline: 5rem;
+  padding-block: 5rem;
+  background: white;
+  border-radius: 30px;
+  text-align: justify;
+  position: relative;
+}
+
+.content-info-box {
+  > * {
+    margin-bottom: 2.5rem;
+  }
+  
+  ul {
+    list-style: disc !important;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-info {
+    margin-inline: 5%;
+    padding-inline: 2rem;
+  }
+}

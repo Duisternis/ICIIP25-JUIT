@@ -124,7 +124,7 @@
 }
 
 .conf-info {
-  background-image: url("/assets/conf-info-bg.png");
+  background-image: url("assets/conf-info-bg.png");
   background-color: white;
   background-size: cover;
   background-position: center;

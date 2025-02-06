@@ -219,6 +219,10 @@
     text-align: center;
   }
 
+  .content-info-box h4 {
+    font-size: 20px;
+  }
+
   .sponsors-news-section {
     > * {
       padding-inline: 2rem;
@@ -231,7 +235,7 @@
   .pre-nav {
     gap: 0rem;
     img {
-      width: 100px;
+      width: 80px;
     }
     .text-img {
       display: none;

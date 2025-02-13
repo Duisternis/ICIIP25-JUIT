@@ -3,5 +3,13 @@ async function loadNavbar() {
     const navbarHTML = await response.text();
     document.getElementById('navbar-container').innerHTML = navbarHTML;
 }
+async function loadFooter() {
+  const response = await fetch('./components/footer.html');
+  const footerHTML = await response.text();
+  console.log(footerHTML)
+  document.getElementById('footer-container').innerHTML = footerHTML;
+}
+
 loadNavbar();
+loadFooter();
 

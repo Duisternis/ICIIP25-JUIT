@@ -32,7 +32,9 @@
 }
 
 .menu-wrapper .menu-item {
-  overflow: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
   white-space: nowrap; 
   padding: 10px 0px;
   display: inline-block;

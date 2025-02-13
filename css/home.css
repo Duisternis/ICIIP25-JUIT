@@ -7,16 +7,49 @@
   border-radius: 30px;
   text-align: justify;
   position: relative;
+  
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; 
+
+
+  > * {
+    flex: 1 1 calc(50% - 20px); 
+    min-width: 300px;
+  }
+}
+
+.imp_date_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 80%;
+  }
 }
 
 .content-info-box {
-  * {
+  > * {
     margin-bottom: 2.5rem;
   }
   
   ul {
     list-style: disc !important;
     padding-left: 20px;
+  }
+}
+
+.spaced-li {
+  ul > li  {
+    padding-bottom: 1rem;
+  }
+
+  ul li ul li {
+    padding-bottom: 0;
   }
 }
 
@@ -47,5 +80,9 @@
   .content-info {
     margin-inline: 5%;
     padding-inline: 2rem;
+
+    * > {
+      flex: 1 1 100%; /* Full width on small screens */
+    }
   }
 }

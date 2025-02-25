@@ -78,8 +78,8 @@
 
 @media (max-width: 768px) {
   .content-info {
-    margin-inline: 5%;
-    padding-inline: 2rem;
+    margin-inline: 10px;
+    padding-inline: 1rem;
 
     * > {
       flex: 1 1 100%; /* Full width on small screens */

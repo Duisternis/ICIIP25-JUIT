@@ -17,45 +17,33 @@
 
 </head>
 <body>
+  <button id="scrollToTopBtn"><i class="bi bi-chevron-up"></i></button>
 
-  <header class="header">
-		<div class="container-1">
-			<input class="menu-btn" type="checkbox" id="menu-btn">
-			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-			<ul class="menu" id="navbar-container">
-			</ul>
-		</div>
-		
-	</header>
-
-  <header>
-    <div class="pre-nav">
-      <img src="assets/h-1.png" alt="juit-logo">
-      <img src="assets/h-3.png" alt="iciip-logo">
-      <img src="assets/h-5.png" alt="text" class="text-img">
-      <img src="assets/h-2.png" alt="nacc-a+">
-      <img src="assets/h-4.png" alt="jaypee-logo">
-    </div>
-
-    <!-- <nav>
-      <div class="menu-wrapper">
-        <div class="menu-item" id="navbar-container"></div>   
-        <span class="pointer left-pointer">
-          <i class="bi bi-chevron-left"></i>
-        </span>
-        
-        <span class="pointer right-pointer">
-          <i class="bi bi-chevron-right"></i>
-        </span>
+  <header class="new_navbar_header">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid mx-xl-5 mx-0 d-flex justify-content-between align-items-center">
+        <a class="navbar-brand nav_logo" href="#">
+          <img class="w-10" src="assets/h-1.png" alt="juit-logo">
+          <div class="logo-text-uni-name text-center text-white fs-6 d-none d-sm-block">
+            <span class="d-block">Jaypee University of</span>
+            <span class="d-block">Information Technology</span>
+            <span class="d-block border-top pt-2 mt-2 border-secondary">Solan, H.P., India</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav flex-wrap my-4 mx-2" id="navbar-container">
+          </ul>
+        </div>
       </div>
-    </nav> -->
-
+    </nav>
   </header>
 
 
   <main class="main-content">
-
-    <div class="carousel-container">
+    <div class="carousel-container">    
       <div class="overlay-content">
         <h1>IMAGE INFORMATION PROCESSING</h1>
         <h1>(ICIIP-2025)</h1>
@@ -64,11 +52,21 @@
           <button type="button" class="btn custom-btn btn-lg">REGISTRATION</button>
           <button type="button" class="btn custom-btn btn-lg">CALL FOR PAPER</button>
         </div>
+        <div class="scroll-down-container">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
       </div>
-      <video autoplay muted loop id="myVideo">
-        <source src="assets/video-bg.mp4" type="video/mp4">
-      </video>
+      <div>
+        <div class="video_overlay">
+        </div>
+        <video autoplay muted loop id="myVideo">
+          <source src="assets/video-bg.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
+
     <!-- header end -->
 
     <div class="content-info">

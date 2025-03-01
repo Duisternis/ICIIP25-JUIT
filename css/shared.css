@@ -99,7 +99,7 @@
 
 .overlay-content {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -367,6 +367,10 @@
 }
 
 @media (max-width: 768px) {
+  .overlay-content {
+    top: 50%;
+  }
+
   .header .container-1 {
     padding: 0.6rem 1rem;
   }

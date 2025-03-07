@@ -2,6 +2,15 @@ var lp = document.querySelector(".left-pointer");
 var rp = document.querySelector(".right-pointer");
 var mItems = document.querySelector(".menu-item");
 
+
+setTimeout(() => {
+  document.querySelector('.typing-text').style.borderRight = 'none';
+}, 2000); 
+
+function scrollToEnd() {
+  document.getElementById("footer-container").scrollIntoView({ behavior: "smooth" });
+}
+
 lp.addEventListener('click', function() {
   var sc = mItems.offsetWidth - 60;
   var pos = mItems.scrollLeft - sc;

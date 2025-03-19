@@ -32,13 +32,25 @@ async function loadNavbar() {
     const navbarHTML = await response.text();
     document.getElementById('navbar-container').innerHTML = navbarHTML;
 }
+
 async function loadFooter() {
   const response = await fetch('./components/footer.html');
   const footerHTML = await response.text();
-  console.log(footerHTML)
+  
   document.getElementById('footer-container').innerHTML = footerHTML;
 }
 
+async function loadHero() {
+  const response = await fetch('./components/hero.html');
+  const heroHTML = await response.text();
+
+  const heroContainer = document.getElementById('hero-container');
+  heroContainer.innerHTML = heroHTML;
+  heroContainer.classList.add('loaded');
+}
+
+loadHero();
 loadNavbar();
 loadFooter();
+
 

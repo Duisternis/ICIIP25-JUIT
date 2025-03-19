@@ -656,4 +656,19 @@
   color: white;
   animation: blink 1s linear infinite;
 }
-
+.cool_tables {
+  .table {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .table th {
+    background: #F8B7B7;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .table th, .table td {
+    padding: 16px;
+  }
+}

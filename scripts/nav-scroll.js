@@ -8,7 +8,7 @@ setTimeout(() => {
 }, 2000); 
 
 function scrollToEnd() {
-  document.getElementById("footer-container").scrollIntoView({ behavior: "smooth" });
+  document.getElementById("news").scrollIntoView({ behavior: "smooth" });
 }
 
 lp.addEventListener('click', function() {

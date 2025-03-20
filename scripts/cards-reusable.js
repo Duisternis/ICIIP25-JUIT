@@ -1,10 +1,13 @@
 const speakers = [
-  { name: "Prof. (Dr.) Pardeep Kumar", university: "Jaypee University of Information Technology, HP, India", img: "https://www.juit.ac.in/profile_pics/juit_faculty_profile5815911134.jpg" },
-  { name: "Dr. Ravindara Bhat", university: "Jaypee University of Information Technology, HP, India",img: "assets/ravindara-bhat.png" },
-  { name: "Dr. Anish Jindal", university: "Durham University, UK", img: "assets/anish-jindal.png" },
-  { name: "Co-Chair: Dr. Ekta Gandotra", university: "Jaypee University of Information Technology, HP, India", img: "assets/shankar.png" },
-  { name: "Dr. Chandra Shekhar Azad", university: "NIT Jamshedpur", img: "assets/shankar.png" }
-];
+    { name: "Prof. (Dr.) Pardeep Kumar", university: "Jaypee University of Information Technology, HP, India", img: "https://www.juit.ac.in/profile_pics/juit_faculty_profile5815911134.jpg" },
+    { name: "Dr. Ravindara Bhat", university: "Jaypee University of Information Technology, HP, India",img: "https://www.juit.ac.in/profile_pics/juit_faculty_profileba21bffa4f.jpg" },
+    { name: "Dr. Anish Jindal", university: "Durham University, UK", img: "https://apps.dur.ac.uk/biography/image/14" },
+  ];
+  
+  const coChairs = [
+      { name: "Dr. Ekta Gandotra", university: "Jaypee University of Information Technology, HP, India", img: "https://www.juit.ac.in/profile_pics/Ekta_gandotraCSE.jpg" },
+      { name: "Dr. Chandra Shekhar Azad", university: "NIT Jamshedpur", img: "https://www.nitjsr.ac.in/backend/uploads/Faculty/CA103/profile/6989f3d2-0df2-4a8c-a412-0d8d2d7c7558.jpg" }
+  ];
 
 function generateCards(containerId, people) {
   const container = document.getElementById(containerId);
@@ -35,3 +38,4 @@ function generateCards(containerId, people) {
 }
 
 generateCards("tech-committe", speakers);
+generateCards("co-chair-tech-committe", coChairs);

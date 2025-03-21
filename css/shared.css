@@ -384,7 +384,7 @@
 
 @media (max-width: 768px) {
   .overlay-content {
-    top: 50%;
+    top: 58%;
   }
 
   .header .container-1 {
@@ -503,7 +503,7 @@
   width: 24px;
   height: 24px;
   margin-inline: auto;
-  transform: translateY(10vh);
+  transform: translateY(2vh);
 }
 
 .chevron {
@@ -638,10 +638,34 @@
 
 .breathe-animation {
   position: absolute;
-  top: 120px;
-  right: 30px;
   z-index: 90;
   text-align: center;
+}
+
+.c {
+  top: 120px;
+  right: 30px;
+}
+
+.d {
+  top: 180px;
+  right: 30px;
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .d {
+    top: 120px;
+    right: 10px;
+  }
+
+  .c {
+    top: 120px;
+    left: 10px;
+    width: fit-content;
+  }
 }
 
 #blinking-button{

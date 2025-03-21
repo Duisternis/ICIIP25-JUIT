@@ -53,7 +53,7 @@
 
     <!-- header end -->
     <div class="content-info">
-      <div class="content-info-box">
+      <div class="content-info-box committee-container">
         <h1>Conference Committee</h1>
 
         <h3>Chief Patron</h3>
@@ -62,6 +62,9 @@
         <h3>Patron</h3>
         <div class="row justify-content-center" id="patron-container"></div>
         
+        <h3>Principal General Chair</h3>
+        <div class="row justify-content-center" id="principal-chair-container"></div>
+
         <h3>Conference General Chair</h3>
         <div class="row justify-content-center" id="general-chair-container"></div>
         
@@ -275,8 +278,10 @@
       patron: [
         { name: "Prof. (Dr.) R.K. Sharma", designation: "Vice Chancellor", university: "Jaypee University of Information Technology, India", img: "https://www.juit.ac.in/authoritiesimage/RKS.jpg" },
       ],
-      generalChair: [
+      principalChair: [
         { name: "Prof. Vivek Kumar Sehgal", designation: "", university: "Jaypee University of Information Technology, HP, India", img: "https://www.juit.ac.in/profile_pics/juit_faculty_profilec3f1620ee4.jpg" },
+      ],
+      generalChair: [
         { name: "Lieutenant Dr. Amit Kumar", designation: "", university: "Jaypee University of Information Technology, HP, India", img: "https://www.juit.ac.in/profile_pics/amitkumar_CSE.jpg" },
       ],
       conferenceCoChair: [
@@ -377,6 +382,7 @@
       // Generate cards for each section
       generateCards("chief-patron-container", committeeMembers.chiefPatron);
       generateCards("patron-container", committeeMembers.patron);
+      generateCards("principal-chair-container", committeeMembers.principalChair);
       generateCards("general-chair-container", committeeMembers.generalChair);
       generateCards("conference-cochair-container", committeeMembers.conferenceCoChair);
       generateCards("organizing-chair-container", committeeMembers.organizingChair);
